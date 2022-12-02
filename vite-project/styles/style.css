@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -94,8 +94,26 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 body{
-  background-color: chartreuse
+  background-color: black
+}
+
+#app{
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  height: 100vh;
+  width: 100vh;
+}
+
+.animation{
+  background-color: navy;
+  height: 90vh;
+}
+
+.header-animation{
+  font-size: 60px;
+  text-align: center;
 }

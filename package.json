@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/staten-island-tech/vite-project-JunxiC/issues"
   },
-  "homepage": "https://github.com/staten-island-tech/vite-project-JunxiC#readme"
+  "homepage": "https://github.com/staten-island-tech/vite-project-JunxiC#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
