@@ -135,4 +135,12 @@ const menu = [
     specialStock: "Yes",
     img: "https://publish.purewow.net/wp-content/uploads/sites/2/2018/01/falafel-pie-recipe-600.jpg",
   },
+  {
+    itemName: "Raspberry Pi",
+    inStock: "Yes",
+    price: "$99.99",
+    customerStars: "5.0",
+    specialStock: "Yes",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Raspberry_Pi_4_Model_B_-_Side.jpg/1200px-Raspberry_Pi_4_Model_B_-_Side.jpg",
+  },
 ];

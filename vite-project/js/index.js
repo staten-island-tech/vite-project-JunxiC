@@ -1,9 +1,9 @@
 document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
+  if (document.body.classList.contains("mint")) {
+    document.body.classList.add("cozy");
+    document.body.classList.remove("mint");
   } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
+    document.body.classList.add("mint");
+    document.body.classList.remove("cozy");
   }
 });
