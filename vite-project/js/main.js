@@ -8,42 +8,42 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 const buttons = {
-  cards: function () {
-    menu.forEach((menu) => {
+  createcards: function () {
+    menu.forEach((pie) => {
       DOMselectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="inner">
-          <p>${menu.itemName}</p>
-          <img src="${menu.img}.png" alt="Pie"></img>
-          <p>${menu.price}</p>
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
         </div>`
       );
     });
   },
   filterStock: function () {
     menu
-      .filter((menu) => menu.inStock == Yes)
-      .forEach((menu) => {
+      .filter((pie) => pie.inStock == Yes)
+      .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
           `<div class="inner">
-          <p>${menu.itemName}</p>
-          <img src="${menu.img}.png" alt="Pie"></img>
-          <p>${menu.price}</p>
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
         </div>`
         );
       });
   },
   filterPrice: function () {
     menu
-      .filter((menu) => menu.price < 10)
-      .forEach((menu) => {
+      .filter((pie) => pie.price < 10)
+      .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
           `<div class="inner">
-          <p>${menu.itemName}</p>
-          <img src="${menu.img}.png" alt="Pie"></img>
-          <p>${menu.price}</p>
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
         </div>`
         );
       });
