@@ -20,7 +20,7 @@ const buttons = {
       );
     });
   },
-  filterStock: function () {
+  filterStocked: function () {
     menu
       .filter((pie) => pie.inStock == Yes)
       .forEach((pie) => {
@@ -34,7 +34,7 @@ const buttons = {
         );
       });
   },
-  filterPrice: function () {
+  filterCheap: function () {
     menu
       .filter((pie) => pie.price < 10)
       .forEach((pie) => {
@@ -48,5 +48,69 @@ const buttons = {
         );
       });
   },
+  filterHighRated: function () {
+    menu
+      .filter((pie) => pie.rating > 4.5)
+      .forEach((pie) => {
+        DOMselectors.box.insertAdjacentHTML(
+          "beforeend",
+          `<div class="inner">
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
+        </div>`
+        );
+      });
+  },
+  filterSpecialStock: function () {
+    menu
+      .filter((pie) => (pie.specialStock = "Yes"))
+      .forEach((pie) => {
+        DOMselectors.box.insertAdjacentHTML(
+          "beforeend",
+          `<div class="inner">
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
+        </div>`
+        );
+      });
+  },
+  filterHotPie: function () {
+    menu
+      .filter((pie) => (pie.temperature = "Hot"))
+      .forEach((pie) => {
+        DOMselectors.box.insertAdjacentHTML(
+          "beforeend",
+          `<div class="inner">
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
+        </div>`
+        );
+      });
+  },
+  filterColdPie: function () {
+    menu
+      .filter((pie) => (pie.temperature = "Cold"))
+      .forEach((pie) => {
+        DOMselectors.box.insertAdjacentHTML(
+          "beforeend",
+          `<div class="inner">
+          <p>${pie.itemName}</p>
+          <img src="${pie.img}.png" alt="Pie"></img>
+          <p>${pie.price}</p>
+        </div>`
+        );
+      });
+  },
+
+  remove: function () {
+    let card = document.querySelectorAll(".inner");
+    card.forEach((card) => {
+      card.remove();
+    });
+  },
 };
+
 console.log(buttons);
