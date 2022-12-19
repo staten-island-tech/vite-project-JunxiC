@@ -114,3 +114,37 @@ const buttons = {
 };
 
 console.log(buttons);
+
+commands.createcards();
+
+DOMselectors.button2.addEventListener("click", function () {
+  commands.remove();
+  commands.filterStocked();
+});
+
+console.log(buttons);
+
+DOMselectors.button3.addEventListener("click", function () {
+  commands.remove();
+  commands.filterCheap();
+});
+
+DOMselectors.button4.addEventListener("click", function () {
+  commands.remove();
+  commands.filterHighRated();
+});
+
+DOMselectors.button5.addEventListener("click", function () {
+  commands.remove();
+  commands.filterSpecialStock();
+});
+
+DOMselectors.button6.addEventListener("click", function () {
+  commands.remove();
+  commands.filterHotPie();
+});
+
+DOMselectors.button7.addEventListener("click", function () {
+  commands.remove();
+  commands.filterColdPie();
+});

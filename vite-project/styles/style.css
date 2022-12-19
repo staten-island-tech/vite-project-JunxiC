@@ -180,6 +180,11 @@ body{
   margin: 2%;
 }
 
+p{
+  justify-content: center;
+  display: flex;
+}
+
 .inner{
   background-color: var(--primary);
   border: 20px solid;
