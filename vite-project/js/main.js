@@ -115,36 +115,36 @@ const buttons = {
 
 console.log(buttons);
 
-commands.createcards();
+buttons.createcards();
 
 DOMselectors.button2.addEventListener("click", function () {
-  commands.remove();
-  commands.filterStocked();
+  buttons.remove();
+  buttons.filterStocked();
 });
 
 console.log(buttons);
 
 DOMselectors.button3.addEventListener("click", function () {
-  commands.remove();
-  commands.filterCheap();
+  buttons.remove();
+  buttons.filterCheap();
 });
 
 DOMselectors.button4.addEventListener("click", function () {
-  commands.remove();
-  commands.filterHighRated();
+  buttons.remove();
+  buttons.filterHighRated();
 });
 
 DOMselectors.button5.addEventListener("click", function () {
-  commands.remove();
-  commands.filterSpecialStock();
+  buttons.remove();
+  buttons.filterSpecialStock();
 });
 
 DOMselectors.button6.addEventListener("click", function () {
-  commands.remove();
-  commands.filterHotPie();
+  buttons.remove();
+  buttons.filterHotPie();
 });
 
 DOMselectors.button7.addEventListener("click", function () {
-  commands.remove();
-  commands.filterColdPie();
+  buttons.remove();
+  buttons.filterColdPie();
 });
