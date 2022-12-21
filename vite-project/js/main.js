@@ -3,6 +3,7 @@ import { menu } from "./menu";
 import { DOMselectors } from "./DOM";
 console.log(menu);
 import AOS from "aos";
+console.log(DOMselectors);
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -14,7 +15,7 @@ const buttons = {
         "beforeend",
         `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
       );
@@ -22,13 +23,13 @@ const buttons = {
   },
   filterStocked: function () {
     menu
-      .filter((pie) => pie.inStock == Yes)
+      .filter((pie) => pie.inStock == "Yes")
       .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
@@ -42,7 +43,7 @@ const buttons = {
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
@@ -50,13 +51,13 @@ const buttons = {
   },
   filterHighRated: function () {
     menu
-      .filter((pie) => pie.rating > 4.5)
+      .filter((pie) => pie.customerStars > 4.5)
       .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
@@ -70,7 +71,7 @@ const buttons = {
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
@@ -84,7 +85,7 @@ const buttons = {
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
@@ -98,7 +99,7 @@ const buttons = {
           "beforeend",
           `<div class="inner">
           <p>${pie.itemName}</p>
-          <img src="${pie.img}.png" alt="Pie"></img>
+          <img src="${pie.img}" alt="Pie"></img>
           <p>${pie.price}</p>
         </div>`
         );
