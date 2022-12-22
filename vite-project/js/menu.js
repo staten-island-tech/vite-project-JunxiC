@@ -131,7 +131,7 @@ const menu = [
     price: "7.49",
     customerStars: "3.7",
     specialStock: "Yes",
-    temperature: "Hot",
+    temperature: "Cold",
     img: "https://thetoastykitchen.com/wp-content/uploads/2021/06/marshmallow-pie-slice-on-plate.jpg",
   },
   {

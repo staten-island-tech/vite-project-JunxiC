@@ -170,7 +170,7 @@ body{
 }
 .main{
   background-color: var(--secondary);
-  height: 990vh;
+  height: 1400vh;
 }
 
 #container{
@@ -187,12 +187,13 @@ p{
 
 .inner{
   background-color: var(--primary);
-  border: 20px solid;
+  border: 10px solid;
   border-radius: 6%;
   width: 60rem;
   height: 70rem;
   margin: 2%;
   font-size: 5rem;
+  align-self: center;
 }
 
 img{

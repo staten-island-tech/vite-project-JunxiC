@@ -13,10 +13,10 @@ const buttons = {
     menu.forEach((pie) => {
       DOMselectors.box.insertAdjacentHTML(
         "beforeend",
-        `<div class="inner">
+        `<div class="inner" data-aos="flip-up">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>${pie.price}</p> 
         </div>`
       );
     });
@@ -65,7 +65,7 @@ const buttons = {
   },
   filterSpecialStock: function () {
     menu
-      .filter((pie) => (pie.specialStock = "Yes"))
+      .filter((pie) => pie.specialStock == "Yes")
       .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
@@ -79,7 +79,7 @@ const buttons = {
   },
   filterHotPie: function () {
     menu
-      .filter((pie) => (pie.temperature = "Hot"))
+      .filter((pie) => pie.temperature == "Hot")
       .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
@@ -93,7 +93,7 @@ const buttons = {
   },
   filterColdPie: function () {
     menu
-      .filter((pie) => (pie.temperature = "Cold"))
+      .filter((pie) => pie.temperature == "Cold")
       .forEach((pie) => {
         DOMselectors.box.insertAdjacentHTML(
           "beforeend",
