@@ -16,7 +16,7 @@ const buttons = {
         `<div class="inner" data-aos="flip-up">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p> 
+          <p>$${pie.price}</p> 
         </div>`
       );
     });
@@ -30,7 +30,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
@@ -44,7 +44,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
@@ -58,7 +58,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
@@ -72,7 +72,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
@@ -86,7 +86,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
@@ -100,7 +100,7 @@ const buttons = {
           `<div class="inner">
           <p>${pie.itemName}</p>
           <img src="${pie.img}" alt="Pie"></img>
-          <p>${pie.price}</p>
+          <p>$${pie.price}</p>
         </div>`
         );
       });
